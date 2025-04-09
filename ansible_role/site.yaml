@@ -1,0 +1,7 @@
+---
+- name: Configure web server
+  hosts: webserver   # <- matches your hosts file
+  become: yes
+
+  roles:
+    - webserver
